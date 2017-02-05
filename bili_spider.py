@@ -40,9 +40,7 @@ def run_thread():
             	lock.release()
 
 if __name__=='__main__':
-    for i in range(multiprocessing.cpu_count()):
-        t = threading.Thread(target=run_thread)
-        t.start()
-    
+    while True: 
+        doit()
 conn.close()
 
